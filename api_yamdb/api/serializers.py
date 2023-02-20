@@ -1,8 +1,6 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
-
 from reviews.models import Category, Comment, Genre, Review, Title
-
 
 REPEAT_REVIEW_ERROR = 'Нельзя добавить повторный отзыв!'
 SCORE_ERROR = 'Оценка должна быть целым числом в пределах от 1 до 10!'
