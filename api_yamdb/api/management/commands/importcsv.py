@@ -49,7 +49,7 @@ class Command(BaseCommand):
             'date_joined': '',
             'confirmation_code': ''
         }
-        SQL_QUERY_FORM = 'INSERT INTO {} ({}) VALUES ({});'
+        sql_query_form = 'INSERT INTO {} ({}) VALUES ({});'
 
         sqlite_connection = sqlite3.connect('db.sqlite3')
         cursor = sqlite_connection.cursor()
@@ -70,7 +70,7 @@ class Command(BaseCommand):
                     columns = ', '.join(columns_list)
                     values = ', '.join(['?' for i in columns_list])
                     sql_query = (
-                        SQL_QUERY_FORM.format(
+                        sql_query_form.format(
                             table_name,
                             columns,
                             values

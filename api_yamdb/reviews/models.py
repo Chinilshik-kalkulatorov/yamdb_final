@@ -15,8 +15,8 @@ def validate_year(value):
     year_now = datetime.now().year
     if year_now >= value >= CREATION_YEAR:
         return value
-    else:
-        raise ValidationError(
+
+    raise ValidationError(
             f'Год выпуска произведения {value} не может быть позже '
             f'настоящего года {year_now}, и раньше даты '
             f'создания произведения "{CREATION_YEAR}"г.'
