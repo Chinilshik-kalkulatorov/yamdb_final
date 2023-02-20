@@ -17,10 +17,10 @@ def validate_year(value):
         return value
 
     raise ValidationError(
-            f'Год выпуска произведения {value} не может быть позже '
-            f'настоящего года {year_now}, и раньше даты '
-            f'создания произведения "{CREATION_YEAR}"г.'
-        )
+        f'Год выпуска произведения {value} не может быть позже '
+        f'настоящего года {year_now}, и раньше даты '
+        f'создания произведения "{CREATION_YEAR}"г.'
+    )
 
 
 class Category(models.Model):
