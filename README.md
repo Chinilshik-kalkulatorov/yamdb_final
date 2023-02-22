@@ -4,6 +4,10 @@ yamdb_final
 
 ![yamdb_final](https://github.com/Chinilshik-kalkulatorov/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
 
+____
+Сервис доступен по ссылке: [Yamdb](http://62.84.121.48/api/v1/)  
+Документация по ссылке: [Redoc](http://62.84.121.48/redoc/)
+
 Требования
 Для запуска этого проекта необходимо установить следующие компоненты:
 
