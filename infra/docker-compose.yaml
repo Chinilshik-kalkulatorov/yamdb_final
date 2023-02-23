@@ -7,8 +7,7 @@ services:
       - db_data:/var/lib/postgresql/data/
     env_file:
       - ./.env
-  web:
-    image: adkhamov/yamdb-final:latest
+  web: 
     build: ../api_yamdb
     restart: always
     volumes:
